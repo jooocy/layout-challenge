@@ -1,0 +1,34 @@
+@mixin sexyTitle {
+    color:blue;
+    font-size: 30px;
+    margin-bottom: 12px;
+}
+
+@mixin link($color) {
+    text-decoration: none;
+    display: block;
+    color: $color;
+    font-size: 32px;
+    margin-left: 10px;
+    
+}
+
+@mixin resposive($device) {
+    @if $device == 'iphone'{
+        @media screen and (max-width:){
+            @content;
+        }
+    }@else if $device == 'iphone-l' {
+        @media screen and (max-width:){
+            @content;
+        }
+    }@else if $device == 'ipad-l'{
+        @media screen and (max-width:){
+            @content;
+        }
+    }@else if $device == 'tablet'{
+        @media screen and (max-width:){
+            @content;    
+        }
+    }
+}

@@ -1,0 +1,43 @@
+.box__main__left {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 2fr;
+
+  .box__main__left__black {
+    background-color: $bg-black;
+    color: white;
+    font-size: 32px;
+    display: flex;
+    flex-direction: column;
+    padding: 5px 5px;
+    padding-right: 40%;
+    align-items: flex-end;
+
+    li:last-child {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+  .box__main__left__pupple {
+    background-color: $bg-pupple;
+  }
+  .box__main__left__red {
+    background-color: $bg-red;
+    font-size: 25px;
+    font-weight: 600;
+    padding: 15px 10px;
+    display: flex;
+    flex-direction: column;
+  }
+  .box__main__left__two {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    background-color: white;
+    .box__main__left__two__yellow {
+      background-color: $bg-yellow;
+      padding: 7px 10px;
+      font-size: 25px;
+      font-weight: 600;
+    }
+  }
+}
